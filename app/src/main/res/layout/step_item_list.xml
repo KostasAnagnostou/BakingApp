@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- The main layout for the Step Item List-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/two_dp"
+    android:layout_marginLeft="@dimen/twelve_dp"
+    android:layout_marginRight="@dimen/twelve_dp"
+    android:layout_marginTop="@dimen/eight_dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <!-- The title (short Description) of each step -->
+    <TextView
+        android:id="@+id/step_short_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/fourteen_dp"
+        android:paddingEnd="@dimen/four_dp"
+        android:paddingLeft="@dimen/four_dp"
+        android:paddingRight="@dimen/four_dp"
+        android:paddingStart="@dimen/four_dp"
+        android:paddingTop="@dimen/fourteen_dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+</LinearLayout>

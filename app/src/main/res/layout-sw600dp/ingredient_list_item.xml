@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/eight_dp">
+
+    <!-- Ingredient Name -->
+    <TextView
+        android:id="@+id/ingredient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/two_dp"
+        android:paddingEnd="@dimen/four_dp"
+        android:paddingLeft="@dimen/six_dp"
+        android:paddingRight="@dimen/four_dp"
+        android:paddingStart="@dimen/six_dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/ten_sp"
+        android:textStyle="bold" />
+
+    <!-- Ingredient Quantity & Measure-->
+    <TextView
+        android:id="@+id/ingredient_quantity_measure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/two_dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/ten_sp"
+        app:layout_constraintLeft_toRightOf="@id/ingredient_name" />
+
+</android.support.constraint.ConstraintLayout>
+

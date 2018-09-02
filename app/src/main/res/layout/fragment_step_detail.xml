@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- The Video Media PLayer for the Step -->
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:id="@+id/step_media_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/thumbnail_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/no_video_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/twelve_dp"
+            android:padding="8dp"
+            android:text="@string/no_video_message" />
+
+    </FrameLayout>
+
+    <!-- The Short Description -->
+    <TextView
+        android:id="@+id/step_detail_short_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/twelve_dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/twenty_two_sp" />
+
+    <ScrollView
+        android:id="@+id/step_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- The Step Full (Long) Description -->
+        <TextView
+            android:id="@+id/step_detail_long_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelve_dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/eighteen_sp" />
+    </ScrollView>
+
+</LinearLayout>

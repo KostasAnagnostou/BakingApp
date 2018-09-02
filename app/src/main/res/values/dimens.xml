@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sizes for Margin, Padding, etc -->
+    <dimen name="sixty_dp">60dp</dimen>
+    <dimen name="one_hundred_eighty_dp">250dp</dimen>
+    <dimen name="twenty_dp">20dp</dimen>
+    <dimen name="sixteen_dp">16dp</dimen>
+    <dimen name="fourteen_dp">14dp</dimen>
+    <dimen name="twelve_dp">12dp</dimen>
+    <dimen name="eight_dp">8dp</dimen>
+    <dimen name="six_dp">6dp</dimen>
+    <dimen name="four_dp">4dp</dimen>
+    <dimen name="two_dp">2dp</dimen>
+    <dimen name="one_dp">1dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+
+    <!-- Sizes for texts -->
+    <dimen name="twenty_two_sp">22sp</dimen>
+    <dimen name="twenty_eight_sp">28sp</dimen>
+    <dimen name="twenty_sp">20sp</dimen>
+    <dimen name="eighteen_sp">18sp</dimen>
+    <dimen name="twelve_sp">12sp</dimen>
+    <dimen name="ten_sp">10sp</dimen>
+
+</resources>

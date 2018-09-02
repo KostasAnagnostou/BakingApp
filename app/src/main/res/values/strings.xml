@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Baking App</string>
+    <string name="ingredients_label">Ingredients</string>
+    <string name="steps_label">Steps:</string>
+    <string name="no_video_message">No video for this step.</string>
+    <string name="image_content_description">Recipe Icon</string>
+    <string name="add_widget_label">Add to Widget</string>
+    <string name="widget_created">You have updated app widget!</string>
+    <string name="no_internet">No Internet Connection. Check your Internet and try again&#8230;</string>
+</resources>

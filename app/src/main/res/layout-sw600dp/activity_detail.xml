@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Main Layout for Detail Activity (tablet) LinearLayout Vertical-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextColor="@color/colorWhite" />
+
+    <!-- Nested LinearLayout Horizontal for the Fragments -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <!-- Nested ScrollView for Ingredients & Steps-->
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nested_detail_scroll_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/colorPrimary">
+
+            <!-- LinearLayout holding Ingredients & Steps images -->
+            <LinearLayout
+                android:id="@+id/ingredients_steps_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/eight_dp"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:text="@string/ingredients_label"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/one_dp"
+                    android:background="@color/colorPrimary" />
+
+                <!-- This container holds the Ingredients -->
+                <FrameLayout
+                    android:id="@+id/ingredient_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:paddingBottom="@dimen/eight_dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="@dimen/eight_dp"
+                    android:paddingTop="@dimen/eight_dp"
+                    android:text="@string/steps_label"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/twenty_two_sp" />
+
+                <!-- This container holds the Steps -->
+                <FrameLayout
+                    android:id="@+id/steps_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+        <!-- This container holds the Steps Details -->
+        <FrameLayout
+            android:id="@+id/step_detail_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+</LinearLayout>
